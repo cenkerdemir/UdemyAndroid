@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ButtonAppForUdemyCourse</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name ...</string>
+</resources>
