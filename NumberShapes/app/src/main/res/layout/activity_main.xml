@@ -30,18 +30,6 @@
         android:hint="@string/enter_your_number_here"
         tools:ignore="UnknownId" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="157dp"
-        android:id="@+id/resultLabel"
-        android:background="@color/colorAccent"
-        android:textSize="24sp"
-        android:layout_below="@+id/numberEditText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="center" />
-
     <Button
         android:text="@string/go"
         android:layout_width="wrap_content"
