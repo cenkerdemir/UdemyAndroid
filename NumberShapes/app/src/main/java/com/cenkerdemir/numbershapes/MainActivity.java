@@ -2,17 +2,37 @@ package com.cenkerdemir.numbershapes;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    class Number {
-        int number = 0;
+    public void numberGoButtonClicked(View view) {
+        EditText numberToCheckAsText = (EditText) findViewById(R.id.numberEditText);
 
-        public boolean isTriangle(){
+       Integer numberToCheckAsInteger = Integer.parseInt(numberToCheckAsText.getText().toString());
 
-            return false;
+        Number numberToCheck = new Number();
+        numberToCheck.number = numberToCheckAsInteger;
+
+        if (numberToCheck.isSquare() && numberToCheck.isTriangle()) {
+            this.setTextForTextView("Your number is both triangular and square");
         }
+        else if (numberToCheck.isSquare()) {
+            this.setTextForTextView("Your number is a square number");
+        }
+        else if (numberToCheck.isTriangle()) {
+            this.setTextForTextView("Your number is a triangular number");
+        }
+        else {
+            this.setTextForTextView("Your number is neither triangular nor square");
+        }
+    }
 
+    public void setTextForTextView(String text) {
+        TextView tv = (TextView) findViewById(R.id.resultLabel);
+        tv.setText(text);
     }
 
     @Override
@@ -21,3 +41,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+

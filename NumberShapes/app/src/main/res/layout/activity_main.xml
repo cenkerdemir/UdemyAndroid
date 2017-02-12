@@ -11,7 +11,44 @@
     tools:context="com.cenkerdemir.numbershapes.MainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/is_your_number_a_triangle_or_a_square_number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:id="@+id/headLabel" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="56dp"
+        android:id="@+id/numberEditText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_your_number_here"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="157dp"
+        android:id="@+id/resultLabel"
+        android:background="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_below="@+id/numberEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="@string/go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/numberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:id="@+id/button"
+        android:onClick="numberGoButtonClicked" />
 </RelativeLayout>
