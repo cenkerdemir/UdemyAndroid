@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 navigationControl.setProgress(mPlayer.getCurrentPosition());
             }
-        }, 0, 100);
+        }, 0, 1000);
 
         navigationControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
