@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GridLayout Demo</string>
+    <string name="button">Button</string>
+    <string name="i_live_in">I live in</string>
+    <string name="good_ev">good ev</string>
+    <string name="hello">hello</string>
+    <string name="how_are_u">how are u?</string>
+    <string name="my_name_is">my name is</string>
+    <string name="please">please</string>
+    <string name="spk_eng">spk eng?</string>
+    <string name="welcome">welcome</string>
 </resources>

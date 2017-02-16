@@ -10,8 +10,130 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.cenkerdemir.gridlayoutdemo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonGridLayout">
+
+        <Button
+            android:text="do you speak&#10;english?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/doyouspeakenglish"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            tools:text="do you speak&#10;english?" />
+
+        <Button
+            android:text="good evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/goodevening"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            tools:text="good evening" />
+
+        <Button
+            android:text="@string/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/hello"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/howareyou"
+            android:textSize="12sp"
+            android:text="how are you?"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            tools:text="how are you?" />
+
+        <Button
+            android:text="i live in..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/ilivein"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            tools:text="i live in..." />
+
+        <Button
+            android:text="my name is..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/mynameis"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            tools:text="my name is..." />
+
+        <Button
+            android:text="@string/please"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/please"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright" />
+
+        <Button
+            android:text="@string/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/welcome"
+            android:textSize="12sp"
+            android:onClick="buttonClicked"
+            android:backgroundTint="@android:color/holo_blue_bright" />
+    </GridLayout>
+
 </RelativeLayout>
